@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <img src="img/Logo-removebg-preview.png" alt="Logo Alura">
+    </header>
+
+<main>
+    <div>
+        <h1>Juego del Ahorcado</h1>
+    </div>
+  
+    <div class="tablero">
+         <img id="hombre" alt="Hombre ahorcado" class="invisible">
+     </div>   
+     <div id="adivinado" class="adivinado invisible">
+        
+     </div>
+     <div id=errado class="errado invisible">
+  
+    </div>
+    <div class="tablero ">
+        <input id="agregarPalabra" type="text" class="agregar invisible">
+    </div>
+    <div class="mensaje">
+
+    </div>
+     <div class="btns">
+        <input type="button" class="btn-azul" value="Nuevo Juego" onclick="nuevoJuego()">
+        <input id="btnAgregar" type="button" class="btn-azul btnAgregar" value="Agregar Palabra">
+        <input id="btnDesistir" type="button" value="Desistir" class="invisible">
+    </div>
+</main>
+    
+<footer>
+    <div class="piePagina">
+        <a href="https://www.linkedin.com/in/erik-jimenez-840b49213/"><img class="logoPiePagina" src="img/in.png" alt="Logo Linkedin"></a>
+        <a href="https://github.com/erikjc29"><img class="logoPiePagina" src="img/github.png" alt="Logo github"></a>
+        <p>&copy 2022 by ErikJC</p>
+    </div>
+    
+
+</footer>
+    <script src="juego.js"></script>
+</body>
+</html>
