@@ -171,7 +171,7 @@ function agregarPalabra(){
   let palabraGuardar=document.querySelector(".agregar")
   let lpbg=palabraGuardar.value;
   console.log(lpbg);
-  if(lpbg.length >1 || lpbg.length<=8 && /\d/.test(lpbg)){ 
+  if(lpbg.length >1 && lpbg.length<=8 || /\d/.test(lpbg)){ 
     let palabraGuardada = lpbg.toUpperCase();
     palabras.push(palabraGuardada);
     console.log(palabraGuardada)
@@ -179,6 +179,7 @@ function agregarPalabra(){
   }
   else{
     document.querySelector(".mensaje").textContent="Maximo 8 letras"
+    
     document.querySelector(".mensaje").classList.add("azul")
   }
   console.log(palabras)
